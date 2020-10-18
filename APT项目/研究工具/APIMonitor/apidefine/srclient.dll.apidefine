@@ -1,0 +1,3 @@
+function SRRemoveRestorePoint(dwRPNum: DWORD): DWORD; stdcall;
+function SRSetRestorePointA(pRestorePtSpec: PRESTOREPOINTINFOA; pSMgrStatus: PSTATEMGRSTATUS): BOOL; stdcall;
+function SRSetRestorePointW(pRestorePtSpec: PRESTOREPOINTINFOW; pSMgrStatus: PSTATEMGRSTATUS): BOOL; stdcall;

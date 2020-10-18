@@ -1,0 +1,2 @@
+function CryptUIDlgSelectCertificateFromStore(hCertStore: HCERTSTORE; hwnd: HWND; pwszTitle, pwszDisplayString: LPCWSTR;dwDontUseColumn, dwFlags: DWORD; pvReserved: LPVOID): PCCERT_CONTEXT; stdcall;
+function CryptUIDlgViewContext(dwContextType: DWORD; pvContext: LPVOID; hwnd: HWND; pwszTitle: LPCWSTR;dwFlags: DWORD; pvReserved: LPVOID): BOOL; stdcall;

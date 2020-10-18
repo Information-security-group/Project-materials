@@ -1,0 +1,9 @@
+function GetExpandedNameA(Source, Buffer: PAnsiChar): Integer; stdcall;
+function GetExpandedNameW(Source, Buffer: PWideChar): Integer; stdcall;
+procedure LZClose(hFile: Integer); stdcall;
+function LZCopy(Source, Dest: Integer): Longint; stdcall;
+function LZInit(Source: Integer): Integer; stdcall;
+function LZOpenFileA(Filename: PAnsiChar; var ReOpenBuff: TOFStruct; Style: Word): Integer; stdcall;
+function LZOpenFileW(Filename: PWideChar; var ReOpenBuff: TOFStruct; Style: Word): Integer; stdcall;
+function LZRead(hFile: Integer; Buffer: LPSTR; Count: Integer): Integer; stdcall;
+function LZSeek(hFile: Integer; Offset: Longint; Origin: Integer): Longint; stdcall;

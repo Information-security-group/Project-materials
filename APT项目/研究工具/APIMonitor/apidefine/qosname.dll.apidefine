@@ -1,0 +1,2 @@
+function WSCInstallQOSTemplate(const Guid: TGUID; QosName: LPWSABUF; Qos: LPQOS): Integer; stdcall;{$EXTERNALSYM WSCInstallQOSTemplate}typeLPWSCINSTALLQOSTEMPLATE = function(const Guid: TGUID; QosName: LPWSABUF; Qos: LPQOS): Integer; stdcall;
+function WSCRemoveQOSTemplate(const Guid: TGUID; QosName: LPWSABUF): Integer; stdcall;{$EXTERNALSYM WSCRemoveQOSTemplate}typeLPWSCREMOVEQOSTEMPLATE = function(const Guid: TGUID; QosName: LPWSABUF): Integer; stdcall;

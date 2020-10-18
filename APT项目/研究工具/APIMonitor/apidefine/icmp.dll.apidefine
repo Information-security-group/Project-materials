@@ -1,0 +1,8 @@
+function Icmp6CreateFile: HANDLE; stdcall;
+function Icmp6ParseReplies(ReplyBuffer: LPVOID; ReplySize: DWORD): DWORD; stdcall;
+function Icmp6SendEcho2(IcmpHandle: HANDLE;Event: HANDLE;ApcRoutine: PIO_APC_ROUTINE;ApcContext: PVOID;SourceAddress: Psockaddr_in6;DestinationAddress: Psockaddr_in6;RequestData,RequestSize: WORD;RequestOptions: PIP_OPTION_INFORMATION;ReplyBuffer: LPVOID;ReplySize: DWORD;Timeout: DWORD): DWORD; stdcall;
+function IcmpCloseHandle(IcmpHandle: HANDLE): BOOL; stdcall;
+function IcmpCreateFile: HANDLE; stdcall;
+function IcmpParseReplies(ReplyBuffer: LPVOID; ReplySize: DWORD): DWORD; stdcall;
+function IcmpSendEcho(IcmpHandle: HANDLE;DestinationAddress: IpAddr;RequestData: LPVOID;RequestSize: WORD;RequestOptions: PIP_OPTION_INFORMATION;ReplyBuffer: LPVOID;ReplySize: DWORD;Timeout: DWORD): DWORD; stdcall;
+function IcmpSendEcho2(IcmpHandle: HANDLE;Event: HANDLE;ApcRoutine: PIO_APC_ROUTINE;ApcContext: PVOID;DestinationAddress: IpAddr;RequestData: LPVOID;RequestSize: WORD;RequestOptions: PIP_OPTION_INFORMATION;ReplyBuffer: LPVOID;ReplySize: DWORD;Timeout: DWORD): DWORD; stdcall;

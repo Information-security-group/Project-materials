@@ -1,0 +1,12 @@
+function DhcpCreateClientInfo(ServerIpAddress: PWideChar; ClientInfo: LPDHCP_CLIENT_INFO): DWORD; stdcall;
+function DhcpDeleteClientInfo(ServerIpAddress: PWideChar; ClientInfo: LPDHCP_SEARCH_INFO): DWORD; stdcall;
+function DhcpEnumSubnetClients(ServerIpAddress: PWideChar; SubnetAddress: DHCP_IP_ADDRESS; var ResumeHandle: DHCP_RESUME_HANDLE; PreferredMaximum: DWORD; out ClientInfo: LPDHCP_CLIENT_INFO_ARRAY; out ClientsRead, ClientsTotal: DWORD): DWORD; stdcall;
+function DhcpEnumSubnets(ServerIpAddress: PWideChar; var ResumeHandle: DHCP_RESUME_HANDLE; PreferredMaximum: DWORD; EnumInfo: LPDHCP_IP_ARRAY; out ElementsRead, ElementsTotal: DWORD): DWORD; stdcall;
+function DhcpGetClientInfo(ServerIpAddress: PWideChar; SearchInfo: LPDHCP_SEARCH_INFO; ClientInfo: LPDHCP_CLIENT_INFO): DWORD; stdcall;
+function DhcpGetOptionValue(ServerIpAddress: PWideChar; OptionID: DHCP_OPTION_ID; const ScopeInfo: DHCP_OPTION_SCOPE_INFO; out OptionValue: LPDHCP_OPTION_VALUE): DWORD; stdcall;
+function DhcpGetServerBindingInfo(ServerIpAddress: PWideChar; Flags: ULONG; out BindElementsInfo: LPDHCP_BIND_ELEMENT_ARRAY): DWORD; stdcall;
+function DhcpGetSubnetInfo(ServerIpAddress: PWideChar; SubnetAddress: DHCP_IP_ADDRESS; out SubnetInfo: LPDHCP_SUBNET_INFO): DWORD; stdcall;
+function DhcpGetVersion(ServerIpAddress: LPWSTR; MajorVersion, MinorVersion: LPDWORD): DWORD; stdcall;
+procedure DhcpRpcFreeMemory(BufferPointer: PVOID); stdcall;
+function DhcpSetClientInfo(ServerIpAddress: PWideChar; ClientInfo: LPDHCP_CLIENT_INFO): DWORD; stdcall;
+function DhcpSetServerBindingInfo(ServerIpAddress: PWideChar; Flags: ULONG; BindElementInfo: LPDHCP_BIND_ELEMENT_ARRAY): DWORD; stdcall;

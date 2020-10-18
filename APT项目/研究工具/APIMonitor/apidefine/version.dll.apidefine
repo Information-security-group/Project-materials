@@ -1,0 +1,12 @@
+function GetFileVersionInfoA(lptstrFilename: PAnsiChar; dwHandle, dwLen: DWORD;lpData: Pointer): BOOL; stdcall;
+function GetFileVersionInfoSizeA(lptstrFilename: PAnsiChar; var lpdwHandle: DWORD): DWORD; stdcall;
+function GetFileVersionInfoSizeW(lptstrFilename: PWideChar; var lpdwHandle: DWORD): DWORD; stdcall;
+function GetFileVersionInfoW(lptstrFilename: PWideChar; dwHandle, dwLen: DWORD;lpData: Pointer): BOOL; stdcall;
+function VerFindFileA(uFlags: DWORD; szFileName, szWinDir, szAppDir, szCurDir: PAnsiChar;var lpuCurDirLen: UINT; szDestDir: PAnsiChar; var lpuDestDirLen: UINT): DWORD; stdcall;
+function VerFindFileW(uFlags: DWORD; szFileName, szWinDir, szAppDir, szCurDir: PWideChar;var lpuCurDirLen: UINT; szDestDir: PWideChar; var lpuDestDirLen: UINT): DWORD; stdcall;
+function VerInstallFileA(uFlags: DWORD;szSrcFileName, szDestFileName, szSrcDir, szDestDir, szCurDir, szTmpFile: PAnsiChar;var lpuTmpFileLen: UINT): DWORD; stdcall;
+function VerInstallFileW(uFlags: DWORD;szSrcFileName, szDestFileName, szSrcDir, szDestDir, szCurDir, szTmpFile: PWideChar;var lpuTmpFileLen: UINT): DWORD; stdcall;
+function VerLanguageNameA(wLang: DWORD; szLang: LPSTR; nSize: DWORD): DWORD; stdcall;
+function VerLanguageNameW(wLang: DWORD; szLang: LPWSTR; nSize: DWORD): DWORD; stdcall;
+function VerQueryValueA(pBlock: Pointer; lpSubBlock: PAnsiChar;var lplpBuffer: Pointer; var puLen: UINT): BOOL; stdcall;
+function VerQueryValueW(pBlock: Pointer; lpSubBlock: PWideChar;var lplpBuffer: Pointer; var puLen: UINT): BOOL; stdcall;

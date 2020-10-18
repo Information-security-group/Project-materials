@@ -1,0 +1,16 @@
+function WpBindToSiteA(hwnd: HWND; wsSiteName, wsSitePostingURL: LPCSTR;dwFlag, dwReserved: DWORD; out ppvUnk: IUnknown): DWORD; stdcall;
+function WpBindToSiteW(hwnd: HWND; wsSiteName, wsSitePostingURL: LPCWSTR;dwFlag, dwReserved: DWORD; out ppvUnk: IUnknown): DWORD; stdcall;
+function WpCreateSiteA(wsSiteName, wsSiteLocalBaseDir, wsSitePostingURL,wsProviderCLSID: LPCSTR; dwFlags: DWORD): DWORD; stdcall;
+function WpCreateSiteW(wsSiteName, wsSiteLocalBaseDir, wsSitePostingURL,wsProviderCLSID: LPCWSTR; dwFlags: DWORD): DWORD; stdcall;
+function WpDeleteSiteA(wsSiteName: LPCSTR): DWORD; stdcall;
+function WpDeleteSiteW(wsSiteName: LPCWSTR): DWORD; stdcall;
+function WpDoesSiteExistA(wsSiteName: LPCSTR; var pfSiteExists: BOOL): DWORD; stdcall;
+function WpDoesSiteExistW(wsSiteName: LPCWSTR; var pfSiteExists: BOOL): DWORD; stdcall;
+function WpEnumProvidersA(var pdwProvidersBufLen: DWORD; pProvidersBuffer: LPWPPROVINFOA;var pdwNumProviders: DWORD): DWORD; stdcall;
+function WpEnumProvidersW(var pdwProvidersBufLen: DWORD; pProvidersBuffer: LPWPPROVINFOW;var pdwNumProviders: DWORD): DWORD; stdcall;
+function WpGetErrorStringA(uErrCode: UINT; wsOutputBuf: LPSTR; var pdwBufLen: DWORD): DWORD; stdcall;
+function WpGetErrorStringW(uErrCode: UINT; wsOutputBuf: LPWSTR; var pdwBufLen: DWORD): DWORD; stdcall;
+function WpListSitesA(var pdwSitesBufLen: DWORD; pSitesBuffer: LPWPSITEINFOA;var pdwNumSites: DWORD): DWORD; stdcall;
+function WpListSitesW(var pdwSitesBufLen: DWORD; pSitesBuffer: LPWPSITEINFOW;var pdwNumSites: DWORD): DWORD; stdcall;
+function WpPostA(hwnd: HWND; dwNumLocalPaths: DWORD; pwsLocalPaths: LPSTR;var pdwSiteNameBufLen: DWORD; wsSiteName: LPSTR; var pdwDestURLBufLen: DWORD;wsDestURL: LPSTR; dwFlag: DWORD): DWORD; stdcall;
+function WpPostW(hwnd: HWND; dwNumLocalPaths: DWORD; pwsLocalPaths: LPWSTR;var pdwSiteNameBufLen: DWORD; wsSiteName: LPWSTR; var pdwDestURLBufLen: DWORD;wsDestURL: LPWSTR; dwFlag: DWORD): DWORD; stdcall;

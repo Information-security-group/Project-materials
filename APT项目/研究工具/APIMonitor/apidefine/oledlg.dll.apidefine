@@ -1,0 +1,1 @@
+function OleUICanConvertOrActivateAs(const clsid: TCLSID;fIsLinkedObject: BOOL; wFormat: Word): BOOL; stdcall;

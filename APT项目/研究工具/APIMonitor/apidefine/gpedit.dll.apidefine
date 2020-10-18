@@ -1,0 +1,6 @@
+function BrowseForGPO(var lpBrowseInfo: GPOBROWSEINFO): HRESULT; stdcall;
+function CreateGPOLink(lpGPO, lpContainer: LPOLESTR; fHighPriority: BOOL): HRESULT; stdcall;
+function DeleteAllGPOLinks(lpContainer: LPOLESTR): HRESULT; stdcall;
+function DeleteGPOLink(lpGPO, lpContainer: LPOLESTR): HRESULT; stdcall;
+function ExportRSoPData(lpNameSpace, lpFileName: LPOLESTR): HRESULT; stdcall;
+function ImportRSoPData(lpNameSpace, lpFileName: LPOLESTR): HRESULT; stdcall;

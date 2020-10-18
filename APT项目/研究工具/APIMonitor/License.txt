@@ -1,0 +1,82 @@
+
+   APIMonitor
+   ~~~~~~~~~~~~~~~~
+   License for Use and Distribution
+
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   APIMonitor is distributed as try before you buy.
+
+   1. LICENSE. APIMonitor.com hereby grants you a nonexclusive license to install and
+   use the Software in machine-readable form on one computer owned and operated
+   by you PER LICENSE PURCHASED. You may copy the Software for backup purposes, provided that
+   you reproduce all copyright and other proprietary notices that are on the original copy of
+   the Software. You may install a copy on a second computer for server testing and setup 
+   purposes only.
+
+   2. RESTRICTIONS. APIMonitor.com retains all right, title, and interest in and to the
+   Software, and any rights not granted to you herein are reserved by APIMonitor.com . Any
+   attempt to transfer any of the rights, duties or obligations hereunder is void. You
+   may not rent, lease, loan, or resell for profit the Software, or any part thereof. You
+   may not reproduce, distribute, publicly perform or publicly display the Software
+   except as expressly permitted by APIMonitor.com, and you may not create derivative
+   works of the Software.  You may not reverse-engineer or otherwise modify the code-level 
+   operation of this Software.  
+   
+   3. INTELLECTUAL PROPERTY. Title to, ownership of, and all copyrights and other intellectual
+   property rights in APIMonitor and all copies thereof shall remain solely in APIMonitor.com owning exclusive rights to selling APIMonitor.  
+
+   4. LICENSE TYPE. There are 5 basic types of licenses issued for APIMonitor as follows:
+    
+      a.Non-Commercial License: Non-Commercial License is for personal, educational or other non-profit use only. If you want to use in a commercial environment, you should order Commercial License. 
+
+      b.Commercial License: THE PRODUCT can be installed and used on any computers used  exclusively by the user who purchases one license. 
+      
+      c.Five-user Commerical License: THE PRODUCT can be installed and used on any computers used  exclusively by five users.
+      
+      d.Site License: THE PRODUCT can be installed and used on any computers so long as the SOFTWARE PRODUCT is used only by employees based at the single registered physical address. 
+
+      e.Enterprise License: THE PRODUCT can be installed and used on any computers so long as the SOFTWARE PRODUCT is used only by employees of your company or organization, including wholly owned subsidiaries, at any location world-wide. 
+      
+
+   5. TRIAL PERIOD. Anyone may use APIMonitor during a period of 15
+   days (trial period). Following this trial period of 15 days or less, if
+   you wish to continue to use APIMonitor, you should register.
+      
+
+   6. TRIAL DISTRIBUTION. The unregistered trial version of APIMonitor  may be freely distributed,
+      with exceptions noted below, provided the distribution package is not
+      modified in any way.
+      
+      a.  No person or company may distribute separate parts of the package,
+          without written permission of the copyright owner.
+      
+      b.  The APIMonitor unregistered trial version may not be distributed
+          inside of any other software package without written permission
+          of the copyright owner.
+
+      c.  Hacks/cracks, keys or key generators may not be included on the
+          same distribution.
+         
+   7. To register you should complete the registration form and send
+      it, with registration fee, to one of the authorized
+      registration sites.
+
+   8. APIMonitor IS DISTRIBUTED "AS IS". NO WARRANTY OF ANY
+      KIND IS EXPRESSED OR IMPLIED. YOU USE AT YOUR OWN RISK.
+      NEITHER THE AUTHOR NOR THE AGENTS OF THE AUTHOR WILL BE LIABLE 
+      FOR DATA LOSS, DAMAGES, LOSS OF PROFITS OR ANY OTHER KIND OF LOSS
+      WHILE USING OR MISUSING THIS SOFTWARE.
+
+           
+   9. Installing and using APIMonitor signifies acceptance of these terms
+      and conditions of the license.
+
+  10. If you do not agree with the terms of this license you must
+      remove APIMonitor files from your storage devices and cease to
+      use the product.
+
+      Thank you for using the original APIMonitor.
+
+                                            QingHai
+                                            APIMonitor.com
+

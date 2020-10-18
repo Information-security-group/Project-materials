@@ -1,0 +1,3 @@
+function AddERExcludedApplicationA(szApplication: LPCSTR): BOOL; stdcall;
+function AddERExcludedApplicationW(wszApplication: LPCWSTR): BOOL; stdcall;{$EXTERNALSYM AddERExcludedApplicationW}typepfn_REPORTFAULT = function(pep: LPEXCEPTION_POINTERS; dwOpt: DWORD): EFaultRepRetVal; stdcall;{$EXTERNALSYM pfn_REPORTFAULT}pfn_ADDEREXCLUDEDAPPLICATIONA = function(szApplication: LPCSTR): BOOL; stdcall;{$EXTERNALSYM pfn_ADDEREXCLUDEDAPPLICATIONA}pfn_ADDEREXCLUDEDAPPLICATIONW = function(wszApplication: LPCWSTR): BOOL; stdcall;
+function ReportFault(pep: LPEXCEPTION_POINTERS; dwOpt: DWORD): EFaultRepRetVal; stdcall;

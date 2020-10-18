@@ -1,0 +1,6 @@
+function GetHostMachineInfo(var puiCIMOSType, puiCIMOSProductSuite: UINT; pszCIMOSVersion, pszCIMOSBuildNumber,pszCIMServicePackMajorVersion, pszCIMServicePackMinorVersion: LPWSTR; var puiCIMProcessorArchitecture: UINT): DWORD; stdcall;
+function MatchEnumTag(hModule: HANDLE; pwcArg: LPCWSTR; dwNumArg: DWORD; pEnumTable: PTOKEN_VALUE; pdwValue: PDWORD): DWORD; stdcall;
+function MatchToken(pwszUserToken, pwszCmdToken: LPCWSTR): BOOL; stdcall;
+function PreprocessCommand(hModule: HANDLE; var ppwcArguments: LPWSTR; dwCurrentIndex, dwArgCount: DWORD; pttTags: PTAG_TYPE;dwTagCount, dwMinArgs, dwMaxArgs: DWORD; var pdwTagType: DWORD): DWORD; stdcall;
+function RegisterContext(pChildContext: PNS_CONTEXT_ATTRIBUTES): DWORD; stdcall;
+function RegisterHelper(const pguidParentContext: TGUID; pfnRegisterSubContext: PNS_HELPER_ATTRIBUTES): DWORD; stdcall;

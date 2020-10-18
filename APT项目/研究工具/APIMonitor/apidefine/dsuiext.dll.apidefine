@@ -1,0 +1,4 @@
+function DsBrowseForContainerA(const pInfo: DSBROWSEINFOA): Integer; stdcall;
+function DsBrowseForContainerW(const pInfo: DSBROWSEINFOW): Integer; stdcall;
+procedure DsGetFriendlyClassName(pszObjectClass, pszBuffer: LPWSTR;cchBuffer: UINT); stdcall;
+function DsGetIcon(dwFlags: DWORD; pszObjectClass: LPWSTR;cxImage, cyImage: Integer): HICON; stdcall;

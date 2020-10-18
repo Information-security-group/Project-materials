@@ -1,0 +1,16 @@
+function WOWCallback16(vpfn16: DWORD; dwParam: DWORD): DWORD; stdcall;
+function WOWCallback16Ex(vpfn16, dwFlags, cbArgs: DWORD; pArgs: PVOID; pdwRetCode: PDWORD): BOOL; stdcall;
+procedure WOWDirectedYield16(htask16: WORD); stdcall;
+function WOWGetVDMPointer(vp, dwBytes: DWORD; fProtectedMode: BOOL): LPVOID; stdcall;
+function WOWGetVDMPointerFix(vp, dwBytes: DWORD; fProtectedMode: BOOL): LPVOID; stdcall;
+procedure WOWGetVDMPointerUnfix(vp: DWORD); stdcall;
+function WOWGlobalAlloc16(wFlags: WORD; cb: DWORD): WORD; stdcall;
+function WOWGlobalAllocLock16(wFlags: WORD; cb: DWORD; var phMem: WORD): DWORD; stdcall;
+function WOWGlobalFree16(hMem: WORD): WORD; stdcall;
+function WOWGlobalLock16(hMem: WORD): DWORD; stdcall;
+function WOWGlobalLockSize16(hMem: WORD; pcb: PDWORD): DWORD; stdcall;
+function WOWGlobalUnlock16(hMem: WORD): BOOL; stdcall;
+function WOWGlobalUnlockFree16(vpMem: DWORD): WORD; stdcall;
+function WOWHandle16(Handle: HANDLE; Type_: WOW_HANDLE_TYPE): WORD; stdcall;
+function WOWHandle32(Handle: WORD; Type_: WOW_HANDLE_TYPE): HANDLE; stdcall;
+procedure WOWYield16; stdcall;

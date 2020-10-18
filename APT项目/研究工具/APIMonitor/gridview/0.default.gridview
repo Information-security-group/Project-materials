@@ -1,0 +1,132 @@
+[GridView.MainGridTableView: TcxGridTableView]
+=
+Footer=False
+GroupByBox=True
+GroupFooters=False
+NewItemRow=False
+FilterActive=False
+FilterDateTimeFormat=
+FilterMaxValueListCount=0
+FilterOptions=[]
+FilterPercentWildcard=%
+FilterUnderscoreWildcard=_
+Filter=Hex:FFFFFFFF0000000000
+SummaryOptions=[]
+
+[GridView.MainGridTableView/OIDColumn: TcxGridColumn]
+=
+AlignmentHorz=0
+Index=0
+Visible=False
+SortOrder=soNone
+SortIndex=-1
+GroupIndex=-1
+Width=64
+
+[GridView.MainGridTableView/APINameColumn: TcxGridColumn]
+=
+AlignmentHorz=0
+Index=1
+Visible=True
+SortOrder=soNone
+SortIndex=-1
+GroupIndex=-1
+Width=222
+
+[GridView.MainGridTableView/ReturnColumn: TcxGridColumn]
+=
+AlignmentHorz=0
+Index=2
+Visible=True
+SortOrder=soNone
+SortIndex=-1
+GroupIndex=-1
+Width=102
+
+[GridView.MainGridTableView/ProcessThreadColumn: TcxGridColumn]
+=
+AlignmentHorz=0
+Index=3
+Visible=False
+SortOrder=soDescending
+SortIndex=0
+GroupIndex=0
+Width=64
+
+[GridView.MainGridTableView/ModuleNameColumn: TcxGridColumn]
+=
+AlignmentHorz=0
+Index=4
+Visible=True
+SortOrder=soNone
+SortIndex=-1
+GroupIndex=-1
+Width=174
+
+[GridView.MainGridTableView/GetLastErrorColumn: TcxGridColumn]
+=
+AlignmentHorz=0
+Index=5
+Visible=False
+SortOrder=soNone
+SortIndex=-1
+GroupIndex=-1
+Width=96
+
+[GridView.MainGridTableView/APIParamsColumn: TcxGridColumn]
+=
+AlignmentHorz=0
+Index=6
+Visible=False
+SortOrder=soNone
+SortIndex=-1
+GroupIndex=-1
+Width=64
+
+[GridView.MainGridTableView/InternalErrorColumn: TcxGridColumn]
+=
+AlignmentHorz=0
+Index=7
+Visible=False
+SortOrder=soNone
+SortIndex=-1
+GroupIndex=-1
+Width=64
+
+[GridView.MainGridTableView/TimeStartColumn: TcxGridColumn]
+=
+AlignmentHorz=0
+Index=8
+Visible=True
+SortOrder=soAscending
+SortIndex=1
+GroupIndex=-1
+Width=112
+
+[GridView.MainGridTableView/UnDefineAPIColumn: TcxGridColumn]
+=
+AlignmentHorz=0
+Index=9
+Visible=False
+SortOrder=soNone
+SortIndex=-1
+GroupIndex=-1
+Width=28
+
+[GridView.MainGridTableView/IsEntryAPIColumn: TcxGridColumn]
+=
+AlignmentHorz=0
+Index=10
+Visible=True
+SortOrder=soNone
+SortIndex=-1
+GroupIndex=-1
+Width=57
+
+[GridView.MainGridTableView/DefaultGroupSummaryItem0: TcxGridTableSummaryItem]
+=
+Column=ProcessThreadColumn
+Format=
+Kind=skCount
+Position=spGroup
+

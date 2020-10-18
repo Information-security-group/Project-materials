@@ -1,0 +1,2 @@
+function DeviceCapabilitiesA(pDevice, pPort: LPCSTR; fwCapability: WORD; pOutput: LPSTR; pDevMode: LPDEVMODEA): Integer; stdcall;
+function DeviceCapabilitiesW(pDevice, pPort: LPCWSTR; fwCapability: WORD; pOutput: LPWSTR; pDevMode: LPDEVMODEW): Integer; stdcall;

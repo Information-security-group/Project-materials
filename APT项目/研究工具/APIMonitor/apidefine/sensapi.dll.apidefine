@@ -1,0 +1,3 @@
+function IsDestinationReachableA(lpszDestination: LPCSTR; lpQOCInfo: LPQOCINFO): BOOL; stdcall;
+function IsDestinationReachableW(lpszDestination: LPCWSTR; lpQOCInfo: LPQOCINFO): BOOL; stdcall;
+function IsNetworkAlive(out lpdwFlags: DWORD): BOOL; stdcall;

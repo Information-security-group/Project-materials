@@ -1,0 +1,10 @@
+function CredUICmdLinePromptForCredentialsA(pszTargetName: PCSTR; pContext: PCtxtHandle; dwAuthError: DWORD; UserName: PSTR; ulUserBufferSize: ULONG; pszPassword: PSTR; ulPasswordBufferSize: ULONG; pfSave: PBOOL; dwFlags: DWORD): DWORD; stdcall;
+function CredUICmdLinePromptForCredentialsW(pszTargetName: LPCWSTR; pContext: PCtxtHandle; dwAuthError: DWORD; UserName: PWSTR; ulUserBufferSize: ULONG; pszPassword: PWSTR; ulPasswordBufferSize: ULONG; pfSave: PBOOL; dwFlags: DWORD): DWORD; stdcall;
+function CredUIConfirmCredentialsA(pszTargetName: PCSTR; bConfirm: BOOL): DWORD; stdcall;
+function CredUIConfirmCredentialsW(pszTargetName: LPCWSTR; bConfirm: BOOL): DWORD; stdcall;
+function CredUIParseUserNameA(pszUserName: PCSTR; pszUser: PSTR; ulUserBufferSize: ULONG; pszDomain: PSTR; ulDomainBufferSize: ULONG): DWORD; stdcall;
+function CredUIParseUserNameW(pszUserName: LPCWSTR; pszUser: PWSTR; ulUserBufferSize: ULONG; pszDomain: PWSTR; ulDomainBufferSize: ULONG): DWORD; stdcall;
+function CredUIPromptForCredentialsA(pUiInfo: PCREDUI_INFOA; pszTargetName: PCSTR; pContext: PCtxtHandle; dwAuthError: DWORD; pszUserName: PSTR; ulUserNameBufferSize: ULONG; pszPassword: PSTR; ulPasswordBufferSize: ULONG; var save: BOOL; dwFlags: DWORD): DWORD; stdcall;
+function CredUIPromptForCredentialsW(pUiInfo: PCREDUI_INFOW; pszTargetName: LPCWSTR; pContext: PCtxtHandle; dwAuthError: DWORD; pszUserName: PWSTR; ulUserNameBufferSize: ULONG; pszPassword: PWSTR; ulPasswordBufferSize: ULONG; var save: BOOL; dwFlags: DWORD): DWORD; stdcall;
+function CredUIReadSSOCredW(pszRealm: LPCWSTR; out ppszUsername: PWSTR): DWORD; stdcall;
+function CredUIStoreSSOCredW(pszRealm, pszUsername, pszPassword: LPCWSTR; bPersist: BOOL): DWORD; stdcall;

@@ -1,0 +1,2 @@
+function UiCreatePatchPackageA(szaPcpPath, szaPatchPath, szaLogPath: LPSTR; hwndStatus: HWND; szaTempFolder: LPSTR; fRemoveTempFolderIfPresent: BOOL): UINT; stdcall;
+function UiCreatePatchPackageW(szwPcpPath, szwPatchPath, szwLogPath: LPWSTR; hwndStatus: HWND; szwTempFolder: LPWSTR; fRemoveTempFolderIfPresent: BOOL): UINT; stdcall;

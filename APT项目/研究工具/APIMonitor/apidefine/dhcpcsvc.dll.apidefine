@@ -1,0 +1,7 @@
+procedure DhcpCApiCleanup; stdcall;
+function DhcpCApiInitialize(var Version: DWORD): DWORD; stdcall;
+function DhcpDeRegisterParamChange(Flags: DWORD; Reserved, Event: LPVOID): DWORD; stdcall;
+function DhcpRegisterParamChange(Flags: DWORD; Reserved: LPVOID; AdapterName: LPWSTR;ClassId: PDHCPCAPI_CLASSID; Params: DHCPCAPI_PARAMS_ARRAY; Handle: LPVOID): DWORD; stdcall;
+function DhcpRemoveDNSRegistrations: DWORD; stdcall;
+function DhcpRequestParams(Flags: DWORD; Reserved: LPVOID; AdapterName: LPWSTR;ClassId: PDHCPCAPI_CLASSID; SendParams, RecdParams: DHCPCAPI_PARAMS_ARRAY;Buffer: LPBYTE; pSize: LPDWORD; RequestIdStr: LPWSTR): DWORD; stdcall;
+function DhcpUndoRequestParams(Flags: DWORD; Reserved: LPVOID; AdapterName: LPWSTR;RequestIdStr: LPWSTR): DWORD; stdcall;

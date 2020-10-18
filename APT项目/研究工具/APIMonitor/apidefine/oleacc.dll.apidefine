@@ -1,0 +1,4 @@
+function AccessibleObjectFromWindow(hwnd: THandle; dwId: DWORD; const riid: TGUID; out ppvObject: Pointer): HRESULT; stdcall;
+function CreateStdAccessibleObject(hwnd: THandle; idObject: LongInt; const riid: TGUID; out ppvObject: Pointer): HRESULT; stdcall;
+function LresultFromObject(const riid: TGUID; wParam: WPARAM; punk: IUnknown): LRESULT; stdcall;
+function ObjectFromLresult(lResult: LRESULT; const riid: TGUID; wParam: WPARAM; out ppvObject): LRESULT; stdcall;

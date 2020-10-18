@@ -1,0 +1,8 @@
+function SisCreateBackupStructure(volumeRoot: PWCHAR; var sisBackupStructure: PVOID; var commonStoreRootPathname: PWCHAR;countOfCommonStoreFilesToBackup: PULONG; var commonStoreFilesToBackup: PWCHAR): BOOL; stdcall;
+function SisCreateRestoreStructure(volumeRoot: PWCHAR; var sisRestoreStructure: PVOID; var commonStoreRootPathname: PWCHAR;countOfCommonStoreFilesToRestore: PULONG; var commonStoreFilesToRestore: PWCHAR): BOOL; stdcall;
+function SisCSFilesToBackupForLink(sisBackupStructure, reparseData: PVOID; reparseDataSize: ULONG; thisFileContext: PVOID;matchingFileContext: PPVOID; countOfCommonStoreFilesToBackup: PULONG; var commonStoreFilesToBackup: PWCHAR): BOOL; stdcall;
+function SisFreeAllocatedMemory(allocatedSpace: PVOID): BOOL; stdcall;
+function SisFreeBackupStructure(sisBackupStructure: PVOID): BOOL; stdcall;
+function SisFreeRestoreStructure(sisRestoreStructure: PVOID): BOOL; stdcall;
+function SisRestoredCommonStoreFile(sisRestoreStructure: PVOID; commonStoreFileName: PWCHAR): BOOL; stdcall;
+function SisRestoredLink(sisRestoreStructure: PVOID; restoredFileName: PWCHAR; reparseData: PVOID; reparseDataSize: ULONG;countOfCommonStoreFilesToRestore: PULONG; var commonStoreFilesToRestore: PWCHAR): BOOL; stdcall;

@@ -1,0 +1,16 @@
+function BindIFilterFromStorage(pStg: IStorage; pUnkOuter: IUnknown; out ppIUnk: IFilter): HRESULT; stdcall;
+function BindIFilterFromStream(pStm: IStream; pUnkOuter: IUnkown; out ppIUnk: IFilter): HRESULT; stdcall;
+function CIBuildQueryNode(wcsProperty: PWCHAR; dbOperator: DBCOMMANDOP;const pvarPropertyValue: PROPVARIANT; var ppTree: PDBCOMMANDTREE;cProperties: ULONG; pProperty: PCIPROPERTYDEF; LocaleID: LCID): HRESULT; stdcall;
+function CIBuildQueryTree(pExistingTree: PDBCOMMANDTREE; dbBoolOp: DBCOMMANDOP;cSiblings: ULONG; ppSibsToCombine: PDBCOMMANDTREE; var ppTree: DBCOMMANDTREE): HRESULT; stdcall;
+function CICreateCommand(out ppCommand: IUnknown; pUnkOuter: IUnknown;const riid: REFIID; pwcsCatalog, pwcsMachine: PWCHAR): HRESULT; stdcall;
+function CIMakeICommand(out ppCommand: ICommand; cScope: ULONG; aDepths: LPDWORD;awcsScope, awcsCatalogs, awcsMachine: PPWCHAR): HRESULT; stdcall;
+function CIRestrictionToFullTree(const pTree: DBCOMMANDTREE; pwszColumns,pwszSortColumns, pwszGroupings: PWCHAR; var ppTree: PDBCOMMANDTREE;cProperties: ULONG; pReserved: PCIPROPERTYDEF; LocaleID: LCID): HRESULT; stdcall;
+function CIState(pwcsCat, pwcsMachine: PWCHAR; var pCiState: CI_STATE): HRESULT; stdcall;
+function CITextToFullTreeEx(pwszRestriction: PWCHAR; ulDialect: ULONG;pwszColumns, pwszSortColumns, pwszGroupings: PWCHAR; var ppTree: PDBCOMMANDTREE;cProperties: ULONG; pProperties: PCIPROPERTYDEF; LocaleID: LCID): HRESULT; stdcall;
+function CITextToSelectTree(pwszRestriction: PWCHAR; var ppTree: PDBCOMMANDTREE;cProperties: ULONG; pProperties: PCIPROPERTYDEF; LocaleID: LCID): HRESULT; stdcall;
+function CITextToSelectTreeEx(pwszRestriction: PWCHAR; ulDialect: ULONG;var ppTree: PDBCOMMANDTREE; cProperties: ULONG; pProperties: PCIPROPERTYDEF;LocaleID: LCID): HRESULT; stdcall;
+function LoadIFilter(pwcsPath: PWCHAR; pUnkOuter: IUnknown; out ppIUnk: IFilter): HRESULT; stdcall;
+function LoadIFilterEx(pwcsPath: PWCHAR; dwFlags: DWORD; const riid: REFIID; out ppIUnk: IUnknown): HRESULT; stdcall;
+function LocateCatalogsA(pwszScope: PCHAR; iBmk: ULONG; pwszMachine: PCHAR;var pccMachine: ULONG; pwszCat: PCHAR; var pccCat: ULONG): HRESULT; stdcall;
+function LocateCatalogsW(pwszScope: PWCHAR; iBmk: ULONG; pwszMachine: PWCHAR;var pccMachine: ULONG; pwszCat: PWCHAR; var pccCat: ULONG): HRESULT; stdcall;
+function SetCatalogState(pwcsCat, pwcsMachine: PWCHAR; dwNewState: DWORD;var pdwOldState: DWORD): HRESULT; stdcall;

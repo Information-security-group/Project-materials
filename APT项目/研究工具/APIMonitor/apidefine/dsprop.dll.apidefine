@@ -1,0 +1,7 @@
+function ADsPropCheckIfWritable(pwzAttr: PWSTR; pWritableAttrs: PADS_ATTR_INFO): BOOL; stdcall;
+function ADsPropCreateNotifyObj(pAppThdDataObj: Pointer{LPDATAOBJECT};pwzADsObjName: PWSTR; var phNotifyObj: HWND): HRESULT; stdcall;
+function ADsPropGetInitInfo(hNotifyObj: HWND; pInitParams: PADSPROPINITPARAMS): BOOL; stdcall;
+function ADsPropSendErrorMessage(hNotifyObj: HWND; pError: PADSPROPERROR): BOOL; stdcall;
+function ADsPropSetHwnd(hNotifyObj: HWND; hPage: HWND): BOOL; stdcall;
+function ADsPropSetHwndWithTitle(hNotifyObj, hPage: HWND; ptzTitle: PTSTR): BOOL; stdcall;
+function ADsPropShowErrorDialog(hNotifyObj: HWND; hPage: HWND): BOOL; stdcall;

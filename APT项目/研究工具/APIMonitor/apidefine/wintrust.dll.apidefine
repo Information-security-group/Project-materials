@@ -1,0 +1,3 @@
+function WinLoadTrustProvider(ActionID: PGUID): BOOL; stdcall;
+function WinSubmitCertificate(var lpCertificate: TWinCertificate): BOOL; stdcall;
+function WinVerifyTrust(hwnd: HWND; const ActionID: TGUID; ActionData: Pointer): Longint; stdcall;

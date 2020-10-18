@@ -1,0 +1,12 @@
+function BackupPerfRegistryToFileW(szFileName: LPCWSTR; szCommentString: LPCWSTR): DWORD; stdcall;
+function InstallPerfDllA(szComputerName, lpIniFile: LPCSTR; dwFlags: ULONG_PTR): DWORD; stdcall;
+function InstallPerfDllW(szComputerName, lpIniFile: LPCWSTR; dwFlags: ULONG_PTR): DWORD; stdcall;
+function LoadPerfCounterTextStringsA(lpCommandLine: LPSTR; bQuietModeArg: BOOL): DWORD; stdcall;
+function LoadPerfCounterTextStringsW(lpCommandLine: LPWSTR; bQuietModeArg: BOOL): DWORD; stdcall;
+function RestorePerfRegistryFromFileW(szFileName: LPCWSTR; szLangId: LPCWSTR): DWORD; stdcall;
+function SetServiceAsTrustedA(szReserved, szServiceName: LPCSTR): DWORD; stdcall;
+function SetServiceAsTrustedW(szReserved, szServiceName: LPCWSTR): DWORD; stdcall;
+function UnloadPerfCounterTextStringsA(lpCommandLine: LPSTR; bQuietModeArg: BOOL): DWORD; stdcall;
+function UnloadPerfCounterTextStringsW(lpCommandLine: LPWSTR; bQuietModeArg: BOOL): DWORD; stdcall;
+function UpdatePerfNameFilesA(szNewCtrFilePath, szNewHlpFilePath: LPCSTR;szLanguageID: LPSTR; dwFlags: ULONG_PTR): DWORD; stdcall;
+function UpdatePerfNameFilesW(szNewCtrFilePath, szNewHlpFilePath: LPCWSTR;szLanguageID: LPWSTR; dwFlags: ULONG_PTR): DWORD; stdcall;

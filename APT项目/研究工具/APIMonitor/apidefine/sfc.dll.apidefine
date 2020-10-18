@@ -1,0 +1,3 @@
+function SfcGetNextProtectedFile(RpcHandle: HANDLE;var ProtFileData: PROTECTED_FILE_DATA): BOOL; stdcall;
+function SfcIsFileProtected(RpcHandle: HANDLE; ProtFileName: LPCWSTR): BOOL; stdcall;
+function SfpVerifyFile(pszFileName: LPCSTR; pszError: LPSTR; dwErrSize: DWORD): BOOL; stdcall;

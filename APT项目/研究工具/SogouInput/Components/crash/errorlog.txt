@@ -1,0 +1,67 @@
+hwsig=6F07F304DD06726E8149164591A8F73C
+version=9.8.0.3746
+//=====================================================
+Time: 2020.10.16 14:11:18 884
+Application: C:\Users\Administrator\AppData\Roaming\360se6\Application\360se.exe
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  6C620EA1 01:000FFEA1 C:\Users\Administrator\AppData\Roaming\360se6\Application\10.0.1255.0\chrome.dll
+Exception Param:00000001	00000005	
+CPU mode: X86
+Registers:EAX:00000001 EBX:1B1E0CBC ECX:1B1E0C28 EDX:00000005 ESI:1B1E0C28 EDI:00000001 CS:EIP:0023:6C620EA1 SS:ESP:002B:003AE678 EBP:003AE680
+DS:002B ES:002B FS:0053 GS:002B Flags:00210202
+
+---------------------------------------------------
+Processes:
+    [0] [System Process]
+    [4] System
+    [308] smss.exe
+    [428] csrss.exe
+    [468] csrss.exe
+    [476] wininit.exe
+    [516] winlogon.exe
+    [564] services.exe
+    [584] lsass.exe
+    [596] lsm.exe
+    [692] svchost.exe
+    [764] svchost.exe
+    [984] sppsvc.exe
+    [164] svchost.exe
+    [288] svchost.exe
+    [436] svchost.exe
+    [576] audiodg.exe
+    [708] svchost.exe
+    [252] svchost.exe
+    [1276] spoolsv.exe
+    [1316] svchost.exe
+    [1916] SearchIndexer.exe
+    [1428] taskhost.exe
+    [1980] dwm.exe
+    [1864] explorer.exe
+    [2356] Protect_2345Explorer.exe
+    [2548] Shield_2345Explorer.exe
+    [2152] svchost.exe
+    [528] hardwarecheck.exe
+    [1912] QQLiveService.exe
+    [2860] 360sd.exe
+    [3172] 360rp.exe
+    [4020] 360Tray.exe
+    [4088] ZhuDongFangYu.exe
+    [3256] SoftMgrLite.exe
+    [3652] svchost.exe
+    [5168] SogouCloud.exe ("D:\360安全浏览器下载\SogouInput\9.8.0.3746\SogouCloud.exe" -daemon) 
+    [2692] wdswfsafe.exe ("C:\Program Files (x86)\360\360Safe\safemon\wdswfsafe.exe") 
+    [6384] PEiD.exe ("D:\360安全浏览器下载\HAPEiD(查壳工具)\HAPEiD_jb51\PEiD.exe" ) 
+    [1452] 360se.exe ("C:\Users\Administrator\AppData\Roaming\360se6\Application\360se.exe") 
+    [4708] 360se.exe ("C:\Users\Administrator\AppData\Roaming\360se6\Application\360se.exe" --type=renderer --disable-direct-write --field-trial-handle=2320,6363218536306557058,171796421696324205,131072 --service-pipe-token=C50D23454628A7EC9C75E1C9D7D939F6 --lang=zh-CN --enable-off) 
+    [3452] 360se.exe ("C:\Users\Administrator\AppData\Roaming\360se6\Application\360se.exe" --type=renderer --disable-direct-write --field-trial-handle=2320,6363218536306557058,171796421696324205,131072 --service-pipe-token=0343658B91BDE4FAEA42D6BFC21DEA78 --lang=zh-CN --extension-) 
+    [1744] 360se.exe ("C:\Users\Administrator\AppData\Roaming\360se6\Application\360se.exe" --type=gpu-process --field-trial-handle=2320,6363218536306557058,171796421696324205,131072 --use-gl=swiftshader-webgl --disable-accelerated-video-decode --gpu-vendor-id=0x10de --gpu-device-i) 
+    [4392] 360se.exe ("C:\Users\Administrator\AppData\Roaming\360se6\Application\360se.exe" --type=renderer --disable-direct-write --field-trial-handle=2320,6363218536306557058,171796421696324205,131072 --service-pipe-token=B1ACE1208AB420A34210114141CD3A04 --lang=zh-CN --enable-off) 
+    [3752] 360se.exe ("C:\Users\Administrator\AppData\Roaming\360se6\Application\360se.exe" --type=plugin --plugin-path="C:\Users\Administrator\AppData\Roaming\360se6\Application\components\npflash\29_0_0_171\NPSWF32_29_0_0_171.dll" --lang=zh-CN --service-request-channel-token=5BC3) 
+    [5460] 360se.exe ("C:\Users\Administrator\AppData\Roaming\360se6\Application\360se.exe" --type=renderer --disable-direct-write --field-trial-handle=2320,6363218536306557058,171796421696324205,131072 --service-pipe-token=0B180982F2B097A7058B7EEE9037A7D2 --lang=zh-CN --enable-off) 
+    [5876] SnippingTool.exe
+    [1284] wisptis.exe
+    [9308] WmiPrvSE.exe
+    [9692] LiveUpdate360.exe
+    [9268] crashrpt.exe ("D:\360安全浏览器下载\SogouInput\Components\crashrpt.exe" "Picface.dll" "sogoupy" "0" "crush.dmp" "crush.rpt") 
+    [5680] svchost.exe
+    [9948] sesvc.exe ("C:\Users\Administrator\AppData\Roaming\360se6\Application\10.0.1255.0\sesvc.exe" /crash:1452 /crashcfg:"C:\Users\Administrator\AppData\Roaming\360se6\User Data\tcdump\crashinfo_14449873_1565.dat") 

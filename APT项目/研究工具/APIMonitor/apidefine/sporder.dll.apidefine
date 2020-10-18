@@ -1,0 +1,2 @@
+function WSCWriteNameSpaceOrder(const lpProviderId: TGUID; dwNumberOfEntries: DWORD): Integer; stdcall;{$EXTERNALSYM WSCWriteNameSpaceOrder}typeLPWSCWRITENAMESPACEORDER = function(const lpProviderId: TGUID; dwNumberOfEntries: DWORD): Integer; stdcall;
+function WSCWriteProviderOrder(lpwdCatalogEntryId: LPDWORD; dwNumberOfEntries: DWORD): Integer; stdcall;{$EXTERNALSYM WSCWriteProviderOrder}typeLPWSCWRITEPROVIDERORDER = function(lpwdCatalogEntryId: LPDWORD; dwNumberOfEntries: DWORD): Integer; stdcall;

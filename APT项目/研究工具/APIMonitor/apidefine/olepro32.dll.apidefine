@@ -1,0 +1,10 @@
+function OleCreateFontIndirect(var FontDesc: TFontDesc; const iid: TIID;var vObject): HResult; stdcall;
+function OleCreatePictureIndirect(var PictDesc: TPictDesc; const iid: TIID;fOwn: BOOL; var vObject): HResult; stdcall;
+function OleCreatePropertyFrame(hwndOwner: HWnd; x, y: Integer;lpszCaption: POleStr; cObjects: Integer; pObjects: Pointer;cPages: Integer; pPageCLSIDs: Pointer; lcid: TLCID; dwReserved: Longint;pvReserved: Pointer): HResult; stdcall;
+function OleCreatePropertyFrameIndirect(var Params: TOCPFIParams): HResult; stdcall;
+function OleIconToCursor(hinstExe: THandle; hIcon: THandle): HCursor; stdcall;
+function OleLoadPicture(stream: IStream; lSize: Longint; fRunmode: BOOL;const iid: TIID; var vObject): HResult; stdcall;
+function OleLoadPictureFile(varFileName: OleVariant;var lpdispPicture: IDispatch): HResult; stdcall;
+function OleLoadPicturePath(szURLorPath: POleStr; unkCaller: IUnknown;dwReserved: Longint; clrReserved: TOleColor; const iid: TIID;ppvRet: Pointer): HResult; stdcall;
+function OleSavePictureFile(dispPicture: IDispatch;bstrFileName: TBStr): HResult; stdcall;
+function OleTranslateColor(clr: TOleColor; hpal: HPalette;var colorref: TColorRef): HResult; stdcall;

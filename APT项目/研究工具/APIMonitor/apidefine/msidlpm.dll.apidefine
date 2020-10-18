@@ -1,0 +1,7 @@
+function LPM_AdmitRsvpMsg(PcmReqHandle: RHANDLE; const pRecvdIntf: RSVP_HOP;const pRsvpMsgObjs: RSVP_MSG_OBJS; RcvdRsvpMsgLength: Integer; RcvdRsvpMsg: PUCHAR;var pulPcmActionFlags: ULONG; pPolicyDecisions: PPolicyDecision; Reserved: Pointer): ULONG; stdcall;
+procedure LPM_CommitResv(RsvpSession: PRsvpSession; FlowInstalledIntf: PRsvpHop;RsvpStyle: PResvStyle; FilterSpecCount: Integer; ppFilterSpecList: PFilterSpec;pMergedFlowSpec: PIsFlowSpec; CommitDecision: ULONG); stdcall;
+function LPM_Deinitialize(LpmHandle: LPM_HANDLE): ULONG; stdcall;
+procedure LPM_DeleteState(pRcvdIfAddr: PRsvpHop; RsvpMsgType: TMsgType;pRsvpSession: PRsvpSession; pRsvpFromHop: PRsvpHop; pResvStyle: PResvStyle;FilterSpecCount: Integer; ppFilterSpecList: PFilterSpec; TearDownReason: Integer); stdcall;
+function LPM_GetRsvpObjects(PcmReqHandle: RHANDLE; MaxPdSize: ULONG;SendingIntfAddr: PRsvpHop; pRsvpMsgObjs: PRsvpMsgObjs; var pRsvpObjectsCount: Integer;var pppRsvpObjects: PRsvpObjHdr; Reserved: Pointer): ULONG; stdcall;
+function LPM_Initialize(LpmHandle: LPM_HANDLE; const pLpmInitInfo: LPM_INIT_INFO;var pLpmVersionNumber: DWORD; var pSupportedPeType: PETYPE; Reserved: Pointer): ULONG; stdcall;
+function LPM_IpAddressTable(cIpAddrTable: ULONG; pIpAddrTable: PLpmIpTable): BOOL; stdcall;

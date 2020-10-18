@@ -1,0 +1,2 @@
+function HtmlHelpA(hwndCaller: HWND; pszFile: LPCSTR; uCommand: UINT; dwData: DWORD_PTR): HWND; stdcall;
+function HtmlHelpW(hwndCaller: HWND; pszFile: LPCWSTR; uCommand: UINT; dwData: DWORD_PTR): HWND; stdcall;
